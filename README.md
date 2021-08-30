@@ -18,7 +18,6 @@
 
 **Ways to run the API tests**
 # We can run the API tests by following ways 
-* From src/main/java/testCases folder we can directly run the Junit tests
 * From src/test/java/features folder we can run each feature file
 * From src/test/java/cucumberTest/TestRunner.java we can run all scenarios at once
 * JSON reports can be found at target\jsonReports
