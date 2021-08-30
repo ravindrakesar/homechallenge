@@ -21,9 +21,11 @@
 * From src/test/java/features folder we can run each feature file
 * From src/test/java/cucumberTest/TestRunner.java we can run all scenarios at once
 * JSON reports can be found at target\jsonReports
+* After running the test runner file, run mvn verify command from terminal
+* This will create cucumber HTML reports which can be found at ./target/cucumber-html-reports/overview-features.html
 
 # Improvements
 * JSON parser implementation for JSON response body verification
 * Scenario examples to parameterise the data
 * property files implemenation to store the base URI and test data
-* Cucumber HTML reports implementation 
+
