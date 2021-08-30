@@ -27,3 +27,4 @@
 * JSON parser implementation for JSON response body verification
 * Scenario examples to parameterise the data
 * property files implemenation to store the base URI and test data
+* Cucumber HTML reports implementation 
