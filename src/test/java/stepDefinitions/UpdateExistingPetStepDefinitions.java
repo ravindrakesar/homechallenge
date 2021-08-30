@@ -25,7 +25,7 @@ public class UpdateExistingPetStepDefinitions {
     String baseURI="http://localhost:8080";
 
     private final static String BASE_PATH = "/api/v3/pet";
-    private final static String UPDATE_EXISTING_PET_REQ_BODY = "C:\\HomeChallengeAPITest\\src\\main\\java\\data\\updatepetwithformdata.json";
+    String UPDATE_EXISTING_PET_REQ_BODY = "C:\\HomeChallengeAPITest\\homechallenge\\src\\main\\java\\data\\updatepetwithformdata.json";
 
     @Given("I have request URL for updating a pet")
     public void i_have_request_url() throws IOException {

@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-08-30T21:08:47.427Z",
+        "start_timestamp": "2021-08-30T21:47:00.244Z",
         "line": 4,
         "name": "Add a new pet to the pet store",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1162000000,
+              "duration": 1300000000,
               "status": "passed"
             },
             "line": 5,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 1057000000,
+              "duration": 1170000000,
               "status": "passed"
             },
             "line": 6,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 93000000,
+              "duration": 94000000,
               "status": "passed"
             },
             "line": 7,
@@ -66,7 +66,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-08-30T21:08:49.879Z",
+        "start_timestamp": "2021-08-30T21:47:02.970Z",
         "line": 4,
         "name": "Delete a pet",
         "description": "",
@@ -76,7 +76,7 @@
         "steps": [
           {
             "result": {
-              "duration": 36000000,
+              "duration": 31000000,
               "status": "passed"
             },
             "line": 5,
@@ -85,6 +85,18 @@
               "location": "stepDefinitions.DeletePetStepDefinitions.I_delete_a_pet()"
             },
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I verify pet deleted from pet store",
+            "match": {
+              "location": "stepDefinitions.DeletePetStepDefinitions.I_verify_pet_deleted_from_store()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
@@ -105,7 +117,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-08-30T21:08:49.931Z",
+        "start_timestamp": "2021-08-30T21:47:03.016Z",
         "line": 4,
         "name": "Verify pet by id",
         "description": "",
@@ -115,16 +127,27 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.opentest4j.AssertionFailedError: expected: \u003c200\u003e but was: \u003c404\u003e\r\n\tat org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)\r\n\tat org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)\r\n\tat org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)\r\n\tat org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)\r\n\tat org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)\r\n\tat stepDefinitions.GetPetByIDTagStatusStepDefinitions.i_have_the_request_url(GetPetByIDTagStatusStepDefinitions.java:21)\r\n\tat ✽.I verify the pet by sending id(file:///C:/HomeChallengeAPITest/homechallenge/src/test/java/features/get-pet-by-id-tag-status.feature:5)\r\n",
-              "duration": 63000000,
-              "status": "failed"
+              "duration": 57000000,
+              "status": "passed"
             },
             "line": 5,
-            "name": "I verify the pet by sending id",
+            "name": "I send id to the request to get pet details",
             "match": {
               "location": "stepDefinitions.GetPetByIDTagStatusStepDefinitions.i_have_the_request_url()"
             },
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 622000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I verify response data",
+            "match": {
+              "location": "stepDefinitions.GetPetByIDTagStatusStepDefinitions.I_verify_response_data()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
@@ -134,8 +157,8 @@
         ]
       },
       {
-        "start_timestamp": "2021-08-30T21:08:50.040Z",
-        "line": 8,
+        "start_timestamp": "2021-08-30T21:47:03.714Z",
+        "line": 10,
         "name": "Verify pet by tags",
         "description": "",
         "id": "to-verify-all-get-apis-by-sending-id--status-or-tags;verify-pet-by-tags",
@@ -144,15 +167,26 @@
         "steps": [
           {
             "result": {
-              "duration": 47000000,
+              "duration": 62000000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "I verify the pet by sending tags",
+            "line": 11,
+            "name": "I send tags to the request to get pet details",
             "match": {
               "location": "stepDefinitions.GetPetByIDTagStatusStepDefinitions.findPetByTags()"
             },
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I check response status code",
+            "match": {
+              "location": "stepDefinitions.GetPetByIDTagStatusStepDefinitions.check_response_status_code()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
@@ -162,8 +196,8 @@
         ]
       },
       {
-        "start_timestamp": "2021-08-30T21:08:50.087Z",
-        "line": 12,
+        "start_timestamp": "2021-08-30T21:47:03.776Z",
+        "line": 15,
         "name": "Verify pet by status",
         "description": "",
         "id": "to-verify-all-get-apis-by-sending-id--status-or-tags;verify-pet-by-status",
@@ -175,12 +209,23 @@
               "duration": 31000000,
               "status": "passed"
             },
-            "line": 13,
-            "name": "I verify the pet by sending status",
+            "line": 16,
+            "name": "I send status to the request to get pet details",
             "match": {
               "location": "stepDefinitions.GetPetByIDTagStatusStepDefinitions.findPetByStatus()"
             },
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I check response status code",
+            "match": {
+              "location": "stepDefinitions.GetPetByIDTagStatusStepDefinitions.check_response_status_code()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
@@ -201,7 +246,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-08-30T21:08:50.134Z",
+        "start_timestamp": "2021-08-30T21:47:03.823Z",
         "line": 4,
         "name": "Verify update of an existing pet",
         "description": "",
@@ -211,8 +256,7 @@
         "steps": [
           {
             "result": {
-              "error_message": "java.nio.file.NoSuchFileException: C:\\HomeChallengeAPITest\\src\\main\\java\\data\\updatepetwithformdata.json\r\n\tat sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)\r\n\tat sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)\r\n\tat sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)\r\n\tat sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:230)\r\n\tat java.nio.file.Files.newByteChannel(Files.java:361)\r\n\tat java.nio.file.Files.newByteChannel(Files.java:407)\r\n\tat java.nio.file.Files.readAllBytes(Files.java:3152)\r\n\tat stepDefinitions.UpdateExistingPetStepDefinitions.i_have_request_url(UpdateExistingPetStepDefinitions.java:38)\r\n\tat ✽.I have request URL for updating a pet(file:///C:/HomeChallengeAPITest/homechallenge/src/test/java/features/update-existing-pet.feature:5)\r\n",
-              "status": "failed"
+              "status": "passed"
             },
             "line": 5,
             "name": "I have request URL for updating a pet",
@@ -223,7 +267,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 31000000,
+              "status": "passed"
             },
             "line": 6,
             "name": "I update the existing pet store",
@@ -234,7 +279,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 16000000,
+              "status": "passed"
             },
             "line": 7,
             "name": "I verify response data to check the update",
