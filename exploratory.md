@@ -142,3 +142,5 @@ Add new catogory will lead to the paid version of the app
 * Also there is a risk of malaicious user erasing all the app data making the real user loose all his data
 * One more functionality which could be added to this app is the Statements
 * If user is given an option to export the balance sheet to his email which opens in a PDF reader, this would be a great feature for end user purpose
+
+# Screenshots of exploratory testing and bugs can be found in the zip file exploratory-Monefy which is attached in this git repo
