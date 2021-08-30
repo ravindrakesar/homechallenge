@@ -4,7 +4,7 @@
 
 * Maven
 * Cucumber
-* Rest assured Java library
+* Rest assured Java data
 
 *Set up this API testing project by cloning the project*
 

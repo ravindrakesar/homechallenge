@@ -11,7 +11,7 @@ import java.nio.file.Paths;
 
 import static io.restassured.RestAssured.given;
 
-public class DeleteApet {
+public class DeletePetStepDefinitions {
     private final static String BASE_PATH = "/api/v3/pet/150";
 
     @Given("I send a delete request to delete the pet")

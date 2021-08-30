@@ -1,16 +1,13 @@
 package stepDefinitions;
 
 import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.Assertions;
-import testCases.petAPIs;
 
 import static io.restassured.RestAssured.given;
 
-public class GetPetByIDTagStatus {
+public class GetPetByIDTagStatusStepDefinitions {
 
     //GET Finds pets by id
     @Given("I verify the pet by sending id")
