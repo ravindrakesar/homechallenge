@@ -1,0 +1,18 @@
+{
+  "id": 141,
+  "category": {
+    "id": 1,
+    "name": "Dogs"
+  },
+  "name": "bheemasix",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "string"
+    }
+  ],
+  "status": "sold"
+}
