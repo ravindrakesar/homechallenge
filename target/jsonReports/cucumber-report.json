@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-08-30T21:47:00.244Z",
+        "start_timestamp": "2021-08-30T21:59:02.424Z",
         "line": 4,
         "name": "Add a new pet to the pet store",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1300000000,
+              "duration": 1153000000,
               "status": "passed"
             },
             "line": 5,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 1170000000,
+              "duration": 1044000000,
               "status": "passed"
             },
             "line": 6,
@@ -66,7 +66,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-08-30T21:47:02.970Z",
+        "start_timestamp": "2021-08-30T21:59:04.878Z",
         "line": 4,
         "name": "Delete a pet",
         "description": "",
@@ -76,7 +76,7 @@
         "steps": [
           {
             "result": {
-              "duration": 31000000,
+              "duration": 47000000,
               "status": "passed"
             },
             "line": 5,
@@ -88,7 +88,6 @@
           },
           {
             "result": {
-              "duration": 15000000,
               "status": "passed"
             },
             "line": 6,
@@ -117,7 +116,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-08-30T21:47:03.016Z",
+        "start_timestamp": "2021-08-30T21:59:04.940Z",
         "line": 4,
         "name": "Verify pet by id",
         "description": "",
@@ -127,7 +126,7 @@
         "steps": [
           {
             "result": {
-              "duration": 57000000,
+              "duration": 63000000,
               "status": "passed"
             },
             "line": 5,
@@ -139,7 +138,7 @@
           },
           {
             "result": {
-              "duration": 622000000,
+              "duration": 678000000,
               "status": "passed"
             },
             "line": 6,
@@ -157,7 +156,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-08-30T21:47:03.714Z",
+        "start_timestamp": "2021-08-30T21:59:05.681Z",
         "line": 10,
         "name": "Verify pet by tags",
         "description": "",
@@ -167,7 +166,7 @@
         "steps": [
           {
             "result": {
-              "duration": 62000000,
+              "duration": 47000000,
               "status": "passed"
             },
             "line": 11,
@@ -196,7 +195,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-08-30T21:47:03.776Z",
+        "start_timestamp": "2021-08-30T21:59:05.744Z",
         "line": 15,
         "name": "Verify pet by status",
         "description": "",
@@ -206,7 +205,7 @@
         "steps": [
           {
             "result": {
-              "duration": 31000000,
+              "duration": 16000000,
               "status": "passed"
             },
             "line": 16,
@@ -246,7 +245,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-08-30T21:47:03.823Z",
+        "start_timestamp": "2021-08-30T21:59:05.775Z",
         "line": 4,
         "name": "Verify update of an existing pet",
         "description": "",
@@ -279,7 +278,6 @@
           },
           {
             "result": {
-              "duration": 16000000,
               "status": "passed"
             },
             "line": 7,
