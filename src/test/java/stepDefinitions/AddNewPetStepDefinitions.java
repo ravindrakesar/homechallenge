@@ -9,33 +9,33 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
+import utilities.Utils;
 
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
 import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
 
-public class AddNewPetStepDefinitions {
+public class AddNewPetStepDefinitions extends Utils {
 
     private RequestSpecification parentRequestSpec,requestSpec;
     ResponseSpecification parentResponseSpec;
     private Response response;
-    String baseURI="http://localhost:8080";
 
     private final static String BASE_PATH = "/api/v3/pet";
-    String ADD_NEW_PET_REQ_BODY = "C:\\HomeChallengeAPITest\\homechallenge\\src\\main\\java\\data\\addnewpet.json";
 
-    @Given("I have the request URL for pet store")
-    public void requestURL() throws IOException {
+    @Given("I define the endpoint input data from {string}")
+    public void requestURL(String fileName) throws IOException, URISyntaxException {
         parentRequestSpec = new RequestSpecBuilder()
-                .setBaseUri(baseURI)
+                .setBaseUri(Utils.getGlobalValue("baseUri"))
                 .setContentType(ContentType.JSON)
                 .setRelaxedHTTPSValidation()
                 .setBasePath(BASE_PATH)
                 .addHeader("Content-Type", "application/json")
-                .setBody(new String(Files.readAllBytes(Paths.get(ADD_NEW_PET_REQ_BODY))))
+                .setBody(new String(Files.readAllBytes(Paths.get(REGISTER_INPUTDATA_FILE_FOLDER+fileName))))
                 .build();
         parentResponseSpec = new ResponseSpecBuilder().expectContentType(ContentType.JSON).build();
     }
