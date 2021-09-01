@@ -24,7 +24,6 @@
 * After running the test runner file, run mvn verify command from terminal
 * This will create cucumber HTML reports which can be found at ./target/cucumber-html-reports/overview-features.html
 
-# Improvements
-* JSON parser implementation for JSON response body verification
+
 
 
