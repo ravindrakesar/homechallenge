@@ -50,5 +50,6 @@ public class AddNewPetStepDefinitions extends Utils {
     public void pet_is_added_to_the_store(){
         System.out.println("Response ::: "+ response.asString());
         response.then().spec(parentResponseSpec).assertThat().statusCode(200);
+        System.out.println(response.getBody().asString());
     }
 }

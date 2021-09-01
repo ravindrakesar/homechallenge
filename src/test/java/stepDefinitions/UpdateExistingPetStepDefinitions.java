@@ -50,6 +50,7 @@ public class UpdateExistingPetStepDefinitions extends Utils {
     public void i_verify_response_data(){
         System.out.println("Response ::: "+ response.asString());
         response.then().spec(parentResponseSpec).assertThat().statusCode(200);
+        System.out.println(response.getBody().asString());
     }
 
 

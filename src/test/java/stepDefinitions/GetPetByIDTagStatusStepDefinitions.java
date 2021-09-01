@@ -26,6 +26,7 @@ public class GetPetByIDTagStatusStepDefinitions {
     public void I_verify_response_data() {
         Assertions.assertEquals(200, response.statusCode());
         Assertions.assertEquals("Lion 1", response.jsonPath().getString("name"));
+        System.out.println(response.getBody().asString());
     }
 
     //GET Finds pets by tags
@@ -54,6 +55,7 @@ public class GetPetByIDTagStatusStepDefinitions {
     @Then("I check response status code")
     public void check_response_status_code() {
         Assertions.assertEquals(200, response.statusCode());
+        System.out.println(response.getBody().asString());
     }
 
 }

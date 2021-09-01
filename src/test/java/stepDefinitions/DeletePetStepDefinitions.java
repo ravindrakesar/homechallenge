@@ -30,6 +30,7 @@ public class DeletePetStepDefinitions {
         System.out.println("Response code::: "+ response.statusCode());
         Assertions.assertEquals(200, response.statusCode());
         Assertions.assertEquals("Pet deleted", response.asString());
+        System.out.println(response.getBody().asString());
 
     }
 
