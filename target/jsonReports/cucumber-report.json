@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-08-31T14:05:21.639Z",
+        "start_timestamp": "2021-09-01T11:30:40.067Z",
         "line": 4,
         "name": "Add a new pet to the pet store",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1170000000,
+              "duration": 1620000000,
               "status": "passed"
             },
             "line": 5,
@@ -31,7 +31,7 @@
           },
           {
             "result": {
-              "duration": 1190000000,
+              "duration": 1591000000,
               "status": "passed"
             },
             "line": 6,
@@ -43,7 +43,7 @@
           },
           {
             "result": {
-              "duration": 92000000,
+              "duration": 131000000,
               "status": "passed"
             },
             "line": 7,
@@ -72,7 +72,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-08-31T14:05:24.215Z",
+        "start_timestamp": "2021-09-01T11:30:43.630Z",
         "line": 4,
         "name": "Delete a pet",
         "description": "",
@@ -82,7 +82,7 @@
         "steps": [
           {
             "result": {
-              "duration": 27000000,
+              "duration": 59000000,
               "status": "passed"
             },
             "line": 5,
@@ -94,7 +94,7 @@
           },
           {
             "result": {
-              "duration": 16000000,
+              "duration": 13000000,
               "status": "passed"
             },
             "line": 6,
@@ -123,7 +123,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-08-31T14:05:24.262Z",
+        "start_timestamp": "2021-09-01T11:30:43.714Z",
         "line": 4,
         "name": "Verify pet by id",
         "description": "",
@@ -133,7 +133,7 @@
         "steps": [
           {
             "result": {
-              "duration": 55000000,
+              "duration": 114000000,
               "status": "passed"
             },
             "line": 5,
@@ -145,7 +145,7 @@
           },
           {
             "result": {
-              "duration": 682000000,
+              "duration": 928000000,
               "status": "passed"
             },
             "line": 6,
@@ -163,7 +163,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-08-31T14:05:25.024Z",
+        "start_timestamp": "2021-09-01T11:30:44.775Z",
         "line": 10,
         "name": "Verify pet by tags",
         "description": "",
@@ -173,7 +173,7 @@
         "steps": [
           {
             "result": {
-              "duration": 51000000,
+              "duration": 79000000,
               "status": "passed"
             },
             "line": 11,
@@ -202,7 +202,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-08-31T14:05:25.083Z",
+        "start_timestamp": "2021-09-01T11:30:44.864Z",
         "line": 15,
         "name": "Verify pet by status",
         "description": "",
@@ -212,7 +212,7 @@
         "steps": [
           {
             "result": {
-              "duration": 33000000,
+              "duration": 40000000,
               "status": "passed"
             },
             "line": 16,
@@ -224,6 +224,7 @@
           },
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 17,
@@ -252,7 +253,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-08-31T14:05:25.116Z",
+        "start_timestamp": "2021-09-01T11:30:44.915Z",
         "line": 4,
         "name": "Verify update of an existing pet",
         "description": "",
@@ -262,7 +263,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2000000,
+              "duration": 9000000,
               "status": "passed"
             },
             "line": 5,
@@ -280,7 +281,7 @@
           },
           {
             "result": {
-              "duration": 39000000,
+              "duration": 56000000,
               "status": "passed"
             },
             "line": 6,
@@ -292,7 +293,7 @@
           },
           {
             "result": {
-              "duration": 2000000,
+              "duration": 3000000,
               "status": "passed"
             },
             "line": 7,
